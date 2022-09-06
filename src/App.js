@@ -12,6 +12,18 @@ function App() {
       <NameList />
       <OnClickEvent />
       <OnChange />
+      <form
+        action=""
+        onSubmit={(event) => {
+          event.preventDefault();
+          const { name, email } = event.target.elements;
+          alert(`Hello ${name.value}, your email is ${email.value}`);
+        }}
+      >
+        <input type="text" placeholder="Enter full name" name="name" />
+        <input type="email" placeholder="Enter your email" name="email" />
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 }
