@@ -3,6 +3,8 @@ import ProfileCard from "./ProfileCard";
 import NameList from "./NameList";
 import OnClickEvent from "./OnClickEvent";
 import OnChange from "./OnChange";
+import Car from "./Props";
+import Subscribe from "./State";
 
 //create root components App
 function App() {
@@ -24,6 +26,10 @@ function App() {
         <input type="email" placeholder="Enter your email" name="email" />
         <button type="submit">Submit</button>
       </form>
+        <Car brand="Toyota" year="1989"/>
+
+        <Subscribe />
+
     </div>
   );
 }
