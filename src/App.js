@@ -5,15 +5,20 @@ import OnClickEvent from "./OnClickEvent";
 import OnChange from "./OnChange";
 import Car from "./Props";
 import Subscribe from "./State";
+import ParentComponent from "./ParentComponent";
 
 //create root components App
 function App() {
   return (
     <div>
       <ProfileCard />
+
       <NameList />
+
       <OnClickEvent />
+
       <OnChange />
+
       <form
         action=""
         onSubmit={(event) => {
@@ -26,9 +31,12 @@ function App() {
         <input type="email" placeholder="Enter your email" name="email" />
         <button type="submit">Submit</button>
       </form>
+
         <Car brand="Toyota" year="1989"/>
 
         <Subscribe />
+
+        <ParentComponent /> 
 
     </div>
   );
