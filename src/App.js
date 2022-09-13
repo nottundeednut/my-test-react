@@ -6,12 +6,13 @@ import OnChange from "./OnChange";
 import Car from "./Props";
 import Subscribe from "./State";
 import ParentComponent from "./ParentComponent";
+import UserGreeting from "./UserGreeting";
 
 //create root components App
 function App() {
   return (
     <div>
-      <ProfileCard />
+      {/* <ProfileCard />
 
       <NameList />
 
@@ -32,12 +33,13 @@ function App() {
         <button type="submit">Submit</button>
       </form>
 
-        <Car brand="Toyota" year="1989"/>
+      <Car brand="Toyota" year="1989" />
 
-        <Subscribe />
+      <Subscribe />
 
-        <ParentComponent /> 
+      <ParentComponent /> */}
 
+      <UserGreeting />
     </div>
   );
 }
